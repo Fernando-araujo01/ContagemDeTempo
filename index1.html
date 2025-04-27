@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aprendendo Java Script</title>
+    <style>
+
+        body{
+
+            background:linear-gradient(to right , blue, #717585, rgb(8, 8, 63));
+            text-align: center;
+            width:100%;
+           
+
+            .stop{
+                font-size: 30px;
+                color:white;
+                padding: 100px;
+                background:tomato;
+            }
+
+            .start{
+                font-size: 30px;
+                color:white;
+                background:green;
+                padding:100px
+            }
+
+
+            .reset{
+
+                font-size: 10px;
+                color:white;
+                background:gray;
+                padding:30px;
+
+            }
+        }
+
+
+        .start:hover{
+            cursor: pointer;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #39FF14;
+            border: 10px solid #39FF14;            
+            }
+
+            .stop:hover{
+            cursor: pointer;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #FF0000;
+            border: 10px solid #FF0000;            
+            }
+
+            .reset:hover{
+
+            cursor: pointer;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #dce787;
+            border: 10px solid #dce787;  
+
+           
+
+            }
+
+            .piscando{
+
+            animation: piscar 1s infinite;
+            color: red;
+
+            }
+
+            @keyframes piscar {
+             0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+           }
+
+    </style>
+</head>
+
+<body>
+
+
+    <h1> CONTROLE DE TEMPO  </h1>
+    <h2 style="color:red"; id="tempo" class="piscando" >20</h2>
+
+    <button  onclick="ativarContagem()" class="start"> Ativar Contagem </button>
+    <button onclick="PararContagem()"  class="stop"> Parar Contagem </button>
+     <br><br><br>
+    <button onclick="ZerarContagem()" class="reset">Zerar Contagem</button>
+
+
+
+
+
+    <script src="index1.js"></script>
+</body>
+
+</html>
